@@ -8,13 +8,5 @@ const userSchema = new mongoose.Schema({
   gamesWon: { type: Number, default: 0 }
 });
 
-
-// hash the password before saving the user
-userSchema.pre('save', async function(next) {
-  if (this.isModified('password')) {
-    this.password = await bcrypt.hash(this.password, 10);
-  }
-  next();
-});
-
-export const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
+export default User;
