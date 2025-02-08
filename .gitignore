@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+dist/
+build/
+
+# Environment variables
+.env
+
+# Editor files
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+coverage/
