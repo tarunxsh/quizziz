@@ -28,3 +28,10 @@ A Real-time quiz game where two players compete against each other. Each player 
     - [x] **`POST /register`**: Registers a new user.
     - [x] **`POST /login`**: Authenticates a user.
     - [x] **`POST /game/start`**: Starts a new game session. 
+
+# Backend Setup
+- cd quizziz
+- pnpm install --frozen-lockfile
+- setup mongodb docker instance using given docker-compose.yml file
+    - docker compose up 
+- pnpm run dev
